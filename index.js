@@ -43,7 +43,7 @@ const scrollRevealOption = {
 ScrollReveal().reveal(".skill-info", {
     ...scrollRevealOption,
     delay : 100,
-    interval : 300,
+    interval : 250,
 });
 
 ScrollReveal().reveal(".projez", {
