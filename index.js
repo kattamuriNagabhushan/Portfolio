@@ -34,11 +34,35 @@ for(let i=0; i<skills.length; i++){
 wrapper.innerHTML = html;
 
 
-// let bar = document.querySelector('.skill-bar');
-// let percentage= document.querySelector('.skill-percentage');
+const scrollRevealOption = {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+};
 
-// bar.style.width = '95%';
-// bar.style.height = '5px';
-// bar.style.border = "1px solid white"
-// bar.style.backgroundColor = 'orange';
-// bar.style.borderRadius = '5px';
+ScrollReveal().reveal(".skill-info", {
+    ...scrollRevealOption,
+    delay : 100,
+    interval : 300,
+});
+
+ScrollReveal().reveal(".projez", {
+    ...scrollRevealOption,
+    delay : 300,
+    interval : 500,
+});
+
+ScrollReveal().reveal(".linkedin-img", {
+    ...scrollRevealOption,
+    distance : "50px",
+    delay : 150,
+    origin : "left",
+    
+});
+
+ScrollReveal().reveal(".github-img", {
+    ...scrollRevealOption,
+    delay : 200,
+    distance : "50px",
+    origin : "right",
+});
