@@ -11,12 +11,12 @@ for(let i=0; i<skills.length; i++){
 
                 <div class="skill-name">
     
-                    <div class="skill-name" style="color : linear-gradient(red, yellow);">${skills[i]}</div>
-                    <div class="skill-percentage">${skills_percentage[i]}</div>
+                    <div class="skill-name for-theme" style="color : linear-gradient(red, yellow);">${skills[i]}</div>
+                    <div class="skill-percentage for-theme">${skills_percentage[i]}</div>
     
                 </div>
     
-                <div style="background-color: white; border-radius: 5px;">
+                <div class="skillbar-theme" style="background-color: white; border-radius: 5px;">
     
                     <div class="skill-bar" style="width : ${skills_percentage[i]}; height:5px;border = 1px solid white;border-radius : 5px;background-color:orange; ">
 
@@ -30,6 +30,70 @@ for(let i=0; i<skills.length; i++){
     
     `
 }
+
+
+const themeBtn = document.querySelector('.theme-btn');
+const themeImage = document.querySelector('.theme-img');
+
+themeBtn.addEventListener('click' , ()=>{
+    console.log("clicked on image");
+    console.log(themeImage.alt)
+    themeImage.src = themeImage.alt == "moon-fill.png" ? "images/moon-line.png" : "images/moon-fill.png";
+    themeImage.alt = themeImage.alt == "moon-fill.png" ? "moon-line.png" : "moon-fill.png";
+
+    if(themeImage.alt == "moon-fill.png"){
+        document.body.style.backgroundColor = "#f2f2f2";
+        document.querySelector(".i-m").style.color = "orange";
+        document.querySelector(".name").style.color = "black";
+        document.querySelector(".K").style.color = "black";
+        document.querySelector(".about__subtitle").style.color = "black";
+        document.querySelector(".about__text").style.color = "black";
+
+        const skillElem =  document.querySelectorAll(".skillbar-theme")
+
+        for(let s=0; s<skillElem.length; s++){
+            skillElem[s].style.backgroundColor = "grey";
+        }
+        // document.getElementsByClassName(".for-theme").style.color = "black";
+        const elements = document.getElementsByClassName('for-theme'); // Selects all elements with class name 'my-class'
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].style.color = "black";
+        }
+        // document.querySelector(".projez").style.border = "3px solid blue";
+        const elem = document.getElementsByClassName('projez'); 
+        console.log(elem);
+        for (let j = 0; j < elem.length; j++) {
+            elem[j].style.border = "3px solid lightblue";
+        }
+    }
+    else{
+        document.body.style.backgroundColor = "black";
+        document.querySelector(".i-m").style.color = "orange";
+        document.querySelector(".name").style.color = "white";
+        document.querySelector(".K").style.color = "lightblue";
+
+        const skillElem =  document.querySelectorAll(".skillbar-theme")
+        for(let s=0; s<skillElem.length; s++){
+            skillElem[s].style.backgroundColor = "white";
+        }
+
+        document.querySelector(".about__subtitle").style.color = "white";
+        // document.getElementsByClassName(".for-theme").style.color = "white";
+
+        const elements = document.getElementsByClassName('for-theme'); // Selects all elements with class name 'my-class'
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].style.color = "white";
+        }
+        document.querySelector(".about__text").style.color = "white";
+
+        const elem = document.getElementsByClassName('projez'); 
+        console.log(elem);
+        for (let j = 0; j < elem.length; j++) {
+            elem[j].style.border = "3px solid greenyellow";
+        }
+    }
+})
+
 
 wrapper.innerHTML = html;
 
