@@ -1,7 +1,8 @@
+/*
 let wrapper = document.querySelector(".wrapper");
 
-let skills = [ 'Html' , 'CSS' , 'JavaScript' , 'React JS' ,'Python', 'My SQL','Data Analyst'];
-let skills_percentage = [ '95%' , '75%' , '75%' , '70%' ,'90%','80%', '75%'];
+let skills = [ 'Html' , 'CSS' , 'JavaScript' , 'React JS' ,'Python','MongoDB', 'My SQL','Data Analyst'];
+let skills_percentage = [ '95%' , '75%' , '75%' , '70%' ,'90%','80%','80%', '75%'];
 
 let html = '';
 
@@ -30,8 +31,10 @@ for(let i=0; i<skills.length; i++){
     
     `
 }
+wrapper.innerHTML = html;
+*/
 
-
+// for dark mode , light mode start..
 const themeBtn = document.querySelector('.theme-btn');
 const themeImage = document.querySelector('.theme-img');
 
@@ -94,8 +97,9 @@ themeBtn.addEventListener('click' , ()=>{
     }
 })
 
+// end of dark , light mode
 
-wrapper.innerHTML = html;
+
 
 
 const scrollRevealOption = {
@@ -109,6 +113,8 @@ ScrollReveal().reveal(".skill-info", {
     delay : 100,
     interval : 250,
 });
+
+
 
 ScrollReveal().reveal(".projez", {
     ...scrollRevealOption,

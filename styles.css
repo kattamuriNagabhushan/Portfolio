@@ -253,6 +253,25 @@ body{
     
 }
 
+.skill-card{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap : 10px;
+    
+}
+
+.dup-skill-info{
+    
+    box-shadow: 0 1px 4px rgba(226, 229, 232, 0.15);
+    
+    text-align: center;
+    width : 70%;
+    margin: auto;
+    
+    
+}
+
 .wrapper{
     display: flex;
     flex-direction: column;
@@ -260,6 +279,24 @@ body{
     align-items: center;
     gap : 20px;
     margin-bottom: 30px;
+}
+
+.dup-wrapper{
+    display: flex;
+    justify-content: space-around;
+    gap : 100px;
+    flex-wrap: wrap;
+    
+    
+}
+
+.skill-card-img{
+    
+    display: flex;
+    justify-content: center;
+}
+.skill-card-img > img{
+    border-radius: 50%;
 }
 
 #contact{
@@ -323,6 +360,12 @@ span.clk:hover{
     width : 100%;
     overflow: hidden;
     text-align: center;
+}
+
+.cont-zoom > a > img{
+    height : 150px;
+    width : 150px;
+    border-radius: 50%;
 }
 
 
