@@ -19,7 +19,7 @@ for(let i=0; i<dupSkills.length; i++){
 
                     <div class="skill-name">
         
-                        <div class="skill-name  for-theme" style="color : linear-gradient(red, yellow);">${dupSkills[i]}</div>
+                        <div class="skillname  for-theme" style="color : linear-gradient(red, yellow);">${dupSkills[i]}</div>
                         <div class="skill-percentage for-theme">${dup_skills_percentage[i]}</div>
         
                     </div>

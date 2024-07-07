@@ -405,8 +405,8 @@ span.clk:hover{
         margin: auto;
     }
 
-    .skill-name > div{
-        font-size: 0.8rem;
+    .skill-name > .fortheme{
+        font-size: 0.2rem;
     }
     .dup-wrapper{
         display: flex;
@@ -435,7 +435,25 @@ span.clk:hover{
         
     }
     .skill-card{
-        width : 35%;
+        width : 20%;
+    }
+    .skill-card-img > img{
+        border-radius: 50%;
+        height: 50px;
+        width : 50px;
+    }
+    .dup-skill-info {
+        box-shadow: 0 1px 4px rgba(226, 229, 232, 0.15);
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    .skill-name > div{
+        font-size: 0.65rem;
+    }
+
+    footer > p{
+        font-size: 0.6rem;
     }
     
 }
@@ -527,7 +545,22 @@ span.clk:hover{
         width: 100%;
         margin: auto;
     }
-    .skill-name > div{
+    
+    .cont-zoom > a > img{
+        height : 70px;
+        width : 70px;
+        border-radius: 50%;
+    }
+    .contacts > div > h3{
+        font-size: 0.8rem;
+    }
+    .project-title{
+        font-size: 0.9rem;
+    }
+    .projez > p{
+        font-size: 0.8rem;
+    }
+    .about__text , #skills > p{
         font-size: 0.8rem;
     }
     
