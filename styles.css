@@ -298,6 +298,18 @@ body{
 .skill-card-img > img{
     border-radius: 50%;
 }
+.skill-card-img  :hover{
+    box-shadow:0px 0px 2px 5px rgb(91, 228, 228);
+}
+
+.skill-bar{
+    margin-bottom: 5px;
+}
+
+.skill-card:hover{
+    box-shadow:0px 0px 3px 3px rgb(236, 79, 170);
+}
+
 
 #contact{
     margin-top: 100px;
@@ -305,8 +317,10 @@ body{
 .contacts{
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
+    gap : 50px;
+    border-radius: 50%;
     
 }
 
@@ -336,11 +350,13 @@ footer{
 }
 
 .projects{
+    
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    gap : 25px;
+    gap : 45px;
     
 }
 
@@ -348,10 +364,14 @@ span.clk:hover{
     color: black;
 }
 .projez{
-    border : 3px solid greenyellow;
+    box-shadow: 1px 2px 3px rgb(109, 109, 216);
     border-radius : 10px;
     padding : 5px;
     flex-basis: 35%;
+}
+
+.projez:hover{
+    box-shadow: 1px 1px 2px 3px rgb(20, 222, 212);
 }
 
 .cont-zoom{
@@ -363,11 +383,13 @@ span.clk:hover{
 }
 
 .cont-zoom > a > img{
-    height : 150px;
-    width : 150px;
+    height : 50px;
+    width : 50px;
     border-radius: 50%;
 }
-
+.cont-zoom > a > img:hover{
+    box-shadow : 0px 0px 2px 3px rgb(8, 199, 34);
+}
 
 .cont-zoom :hover{
     transform: scale(1.1);
@@ -493,7 +515,7 @@ span.clk:hover{
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        gap : 10px;
+        gap : 40px;
     }
 
     .dup-skill-info {

@@ -63,11 +63,11 @@ themeBtn.addEventListener('click' , ()=>{
             elements[i].style.color = "black";
         }
         // document.querySelector(".projez").style.border = "3px solid blue";
-        const elem = document.getElementsByClassName('projez'); 
-        console.log(elem);
-        for (let j = 0; j < elem.length; j++) {
-            elem[j].style.border = "3px solid lightblue";
-        }
+        // const elem = document.getElementsByClassName('projez'); 
+        // console.log(elem);
+        // for (let j = 0; j < elem.length; j++) {
+        //     elem[j].style.border = "3px solid lightblue";
+        // }
     }
     else{
         document.body.style.backgroundColor = "black";
@@ -89,11 +89,11 @@ themeBtn.addEventListener('click' , ()=>{
         }
         document.querySelector(".about__text").style.color = "white";
 
-        const elem = document.getElementsByClassName('projez'); 
-        console.log(elem);
-        for (let j = 0; j < elem.length; j++) {
-            elem[j].style.border = "3px solid greenyellow";
-        }
+        // const elem = document.getElementsByClassName('projez'); 
+        // console.log(elem);
+        // for (let j = 0; j < elem.length; j++) {
+        //     elem[j].style.border = "3px solid greenyellow";
+        // }
     }
 })
 
