@@ -370,6 +370,7 @@ body{
 .contacts > div > h3{
     color : orange;
     text-align: center;
+    font-size: 0.7rem;
 }
 .gmail{
     align-self: center;
