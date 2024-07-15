@@ -68,12 +68,20 @@ themeBtn.addEventListener('click' , ()=>{
         // for (let j = 0; j < elem.length; j++) {
         //     elem[j].style.border = "3px solid lightblue";
         // }
+        const nav_link = document.querySelectorAll(".nav_link");
+        for (let j = 0; j < nav_link.length; j++) {
+            nav_link[j].style.color = "black";
+        }
     }
     else{
         document.body.style.backgroundColor = "black";
         document.querySelector(".i-m").style.color = "orange";
         document.querySelector(".name").style.color = "white";
         document.querySelector(".K").style.color = "lightblue";
+        const nav_link = document.querySelectorAll(".nav_link");
+        for (let j = 0; j < nav_link.length; j++) {
+            nav_link[j].style.color = "white";
+        }
 
         const skillElem =  document.querySelectorAll(".skillbar-theme")
         for(let s=0; s<skillElem.length; s++){
