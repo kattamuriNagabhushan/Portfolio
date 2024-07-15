@@ -191,16 +191,17 @@ body{
     position: relative;
     text-align: center;
     color : rgb(89, 236, 10);
+    font-size: 3rem;
   }
 .section-title::after {
     position: absolute;
     content: "";
-    width: 64px;
+    width: 164px;
     height: 0.18rem;
     left: 0;
     right: 0;
     margin: auto;
-    top: 2rem;
+    top: 3rem;
     background-color:rgb(205, 244, 9);
 }
 
