@@ -41,14 +41,15 @@ const themeImage = document.querySelector('.theme-img');
 themeBtn.addEventListener('click' , ()=>{
     console.log("clicked on image");
     console.log(themeImage.alt)
-    themeImage.src = themeImage.alt == "moon-fill.png" ? "images/moon-line.png" : "images/moon-fill.png";
+    themeImage.src = themeImage.alt == "moon-fill.png" ? "images/theme-mode.jpeg" : "images/theme-mode.jpeg";
     themeImage.alt = themeImage.alt == "moon-fill.png" ? "moon-line.png" : "moon-fill.png";
-
+    const nav_link = document.querySelectorAll(".nav_link");
     if(themeImage.alt == "moon-fill.png"){
         document.body.style.backgroundColor = "#f2f2f2";
         document.querySelector(".i-m").style.color = "orange";
         document.querySelector(".name").style.color = "black";
         document.querySelector(".K").style.color = "black";
+        document.querySelector(".theme-btn").style.backgroundColor = "white";
         document.querySelector(".about__subtitle").style.color = "black";
         document.querySelector(".about__text").style.color = "black";
 
@@ -68,17 +69,20 @@ themeBtn.addEventListener('click' , ()=>{
         // for (let j = 0; j < elem.length; j++) {
         //     elem[j].style.border = "3px solid lightblue";
         // }
-        const nav_link = document.querySelectorAll(".nav_link");
+        
         for (let j = 0; j < nav_link.length; j++) {
             nav_link[j].style.color = "black";
+            
+
         }
     }
     else{
         document.body.style.backgroundColor = "black";
+        document.querySelector(".theme-btn").style.backgroundColor = "black";
         document.querySelector(".i-m").style.color = "orange";
         document.querySelector(".name").style.color = "white";
         document.querySelector(".K").style.color = "lightblue";
-        const nav_link = document.querySelectorAll(".nav_link");
+        
         for (let j = 0; j < nav_link.length; j++) {
             nav_link[j].style.color = "white";
         }
